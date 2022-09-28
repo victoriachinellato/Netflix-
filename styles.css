@@ -1,19 +1,30 @@
-body {
-    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/a795ee10-8c6d-467c-8159-254be2b69013/2ee35a42-0a46-42d4-a7d7-96dfad9617ae/ES-es-20220912-popsignuptwoweeks-perspective_alpha_website_large.jpg);
-    background-image: linear-gradient(0deg, rgba(0,0,0,.8) 0);
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'roboto';
+}
+
+body > div {
+    
+    background:linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8)), url(https://assets.nflxext.com/ffe/siteui/vlv3/a795ee10-8c6d-467c-8159-254be2b69013/2ee35a42-0a46-42d4-a7d7-96dfad9617ae/ES-es-20220912-popsignuptwoweeks-perspective_alpha_website_large.jpg);
     background-repeat: no-repeat;
+    height: 90vh;
+    margin: 0px;
+    border-bottom: 8px solid #222;
+    
 }
 
 
 .netflixLogo {
     width: 250px;
     
-    
-    
-    
+
 }
 
-header {
+body div header {
     display: flex;
     justify-content: space-between ;
     align-items: center;
@@ -21,7 +32,7 @@ header {
     
 }
 
-section {
+body div section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,64 +40,73 @@ section {
     text-align: center;
 }
 
-article {
-    width: 900px;
+div section article {
+    width: 1100px;
 }
 
 h1 {
     margin: 0px 150px;
     font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    
+    
+
 }
 
 h5 {
     font-size: 26px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    font-weight: 300;
 }
 
 h6 {
     font-size: 19.2px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    font-weight: 300;
+    
 }
 
 /* idioma y log in CONTENEDOR*/
-header form {
-    width: 260px;
+div header form {
+    width: 300px;
     display: flex;
     justify-content: space-between;
     padding-right: 40px;
 }
 
 /* idioma SELECTOR*/
-header select {
+div header select {
     background: #00000066;
     color: white;
     padding: 8px 22px;
 }
 
 /* iniciar sesion BOTON */
-header button {
+div header button {
     background: #E50914;
     color: white;
     border-radius: 4px;
     border-style: none;
     padding: 7px 17px;
-    font-size: 13px;
+    font-size: 15px;
+    margin-left: 10px;
+    width: 130px;
 }
 
 /* direccion de correo INPUT */
 
-section form input{
+div section form input{
     width: 500px;
     height: 50px;
     border-style: none;
     font-size: 17px;
-    padding-left: 20px;
+    padding: 20px;
+    margin-top: 30px;
 }
 
 /* Empezar BOTON */
 
-section form button {
+div section form button {
     background: #E50914;
     border-style: none;
     width: 140px;
@@ -95,7 +115,103 @@ section form button {
     font-size: 20px;
 }
 
-.tvImage {
-    width: 600px;
-    margin-top: 600px;
+
+
+/* paginas 1,2,3 y 4 */
+.pagina1 {
+    background-color: black;
+    height: 90vh;
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    border-bottom: 8px solid #222;
+    color: white;
+    padding: 50px;
+    padding-top: 70px;
+}
+
+.article {
+    width: 500px;
+    height: 400px;
+    text-align: left;
+    margin: 50px;
+
+}
+.article h2 {
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+}
+.article h1  {
+    text-align: left;
+    margin: 20px;
+    font-size: 50px;
+    padding: 10px;
+}
+
+.pagina1 img {
+    width: auto;
+    height: 400px;
+}
+
+.preguntasFrecuentes{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.preguntasFrecuentes div {
+ display: flex;
+ flex-direction: column;
+ height: 90vh;
+ justify-content: space-between;
+ align-items: center;
+}
+
+
+.preguntasFrecuentes h1 {
+    color: white;
+    font-size: 45px;
+}
+
+.preguntasFrecuentes button {
+    background: #303030;
+    color: white;
+    border: none;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 25px;
+    width: 700px;
+}
+
+.preguntasFrecuentes h6 {
+    color: white;
+}
+
+.preguntasFrecuentes input{
+    width: 500px;
+    height: 30px;
+    border-style: none;
+    font-size: 13px;
+    padding: 20px;
+}
+
+.preguntasFrecuentes form {
+    display: flex;
+    font-size: 20px;
+}
+
+.preguntasFrecuentes form button {
+    background-color: red;
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
